@@ -1,0 +1,12 @@
+Aplikasi Filmopedia merupakan aplikasi mobile perpustakaan film berdasarkan API TheMovieDB/TMDB. Aplikasi ini bertujuan untuk memberikan daftar film-film yang ada dalam TMDB dan menyajikan informasi-informasi detail mengenai film tersebut.
+
+Berikut adalah file-file kotlin yang digunakan di Aplikasi ini:
+Aplikasi Data:
+- DaoFilm: Berfungsi sebagai Data Access Object untuk mengakses objek yang disimpan oleh entity kedalam database
+- ApiFilm: Berfungsi sebagai penghubung aplikasi ke link-link API, serta kode API yang diperlukan untuk mengakses layanan API tersebut
+- MovieDTO: Data transfer object untukmentransfer data dari API ke database lokal/app
+- MovieListDto: Berfungsi mengambil data seperti halaman,halaman total, list film yang ada, dan total hasil list film.
+- DatabaseFilm: Berfungsi untuk database yang menyimpan data secara lokal
+- EntityFilm: Berfungsi untuk menyimpan data kedalam database aplikasi
+- Film: Berfungsi untuk mendeklarasikan jenis data variabel-variabel dalam detail film
+- RepositoryListFilm: Berfungsi untuk menambahkan layer abstraksi yang memisahkan data source dengan bagian aplikasi lain, sehingga lebih mudah memrposee data.
